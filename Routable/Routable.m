@@ -175,7 +175,7 @@
 }
 
 - (void)openExternal:(NSString *)url {
-  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
 }
 
 - (void)open:(NSString *)url {
